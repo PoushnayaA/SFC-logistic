@@ -1,0 +1,83 @@
+.form {
+  color: $color-default-white;
+  background-color: $color-cello;
+  // display: grid;
+  // grid-template-columns: 1fr;
+
+  .form__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include vp-768 {
+      grid-template-columns: 1fr 1fr;
+      gap: 0 10px;
+    }
+
+    @include vp-1440 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .title {
+    border: none;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .form__item {
+    width: 100%;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid #dedede;
+    background-color: transparent;
+    padding: 12px 0;
+    width: 100%;
+    color: $color-default-white;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+
+    &::placeholder {
+      color: #dedede;
+    }
+
+  }
+
+  .form__buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    @include vp-768 {
+      flex-direction: row;
+    }
+    @include vp-1440 {
+      flex-direction: column;
+      grid-column-start: -1;
+      grid-column-end: -2;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+  }
+
+  .transparent-button {
+    background-color: $color-default-white;
+    color: $color-cello;
+
+
+  }
+
+  .form__item--message {
+    @include vp-768 {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+    @include vp-1440 {
+      grid-column-start: auto;
+      grid-column-end: auto;
+    }
+
+  }
+}

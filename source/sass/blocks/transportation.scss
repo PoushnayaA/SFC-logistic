@@ -1,0 +1,32 @@
+.transportation {
+  .transportation__img {
+    height: 216px;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: right bottom;
+    }
+
+    @include vp-768 {
+      height: 410px;
+    }
+
+    @include vp-1440 {
+      height: 593px;
+      grid-row-start: 1;
+      grid-row-end: -1;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+
+  .container {
+    @include vp-1440 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
