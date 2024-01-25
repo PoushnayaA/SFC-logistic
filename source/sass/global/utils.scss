@@ -15,14 +15,25 @@
   main {
     flex-grow: 1;
   }
-}
 
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
+  &--dark {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #6E7275;
+      opacity: 50%;
+    }
+
+    @include vp-1440 {
+      &::after {
+        content: none;
+      }
+    }
+  }
 }
 
 .visually-hidden {

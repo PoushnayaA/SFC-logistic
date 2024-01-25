@@ -1,0 +1,52 @@
+.hero {
+  img {
+    object-fit: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 428px;
+    @include vp-768 {
+      height: 440px;
+    }
+
+    @include vp-1440 {
+      height: 585px;
+    }
+  }
+
+  p {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0, -50%);
+    display: block;
+    height: max-content;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43px;
+    max-width: 284px;
+    margin: 0;
+
+    @include vp-768 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 65px;
+      max-width: 505px;
+    }
+
+    @include vp-1440 {
+      bottom: 0;
+      top: auto;
+    }
+  }
+}

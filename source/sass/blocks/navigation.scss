@@ -1,0 +1,221 @@
+.navigation {
+  background-color: $color-default-white;
+
+  li {
+
+    &:hover,
+    &:focus,
+    &:active {
+      a {
+        color: $color-twine;
+      }
+    }
+  }
+
+  nav {
+    @include vp-1440 {
+      display: flex;
+      // justify-content: space-between;
+    }
+  }
+
+  button {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    border: none;
+    background-color: $color-transparent;
+
+    @include vp-1440 {
+      display: none;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      background-color: $color-midnight;
+      height: 3px;
+      width: 22px;
+      top: 13px;
+      left: 5px;
+      right: 5px;
+      transition-duration: 0.3s, 0.1s;
+      transition-delay: 0.3s, 0s;
+      color: $color-midnight;
+
+      &::before {
+        position: absolute;
+        display: block;
+        height: 3px;
+        top: -7px;
+        width: 100%;
+        background-color: $color-midnight;
+        content: "";
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+      }
+
+      &::after {
+        position: absolute;
+        display: block;
+        height: 3px;
+        bottom: -7px;
+        width: 100%;
+        background-color: $color-midnight;
+        content: "";
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+      }
+    }
+
+    &.active {
+      & span {
+        background: none;
+      }
+
+      & span::after {
+        transform: rotate(-45deg);
+        top: 0;
+      }
+
+      & span::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+    }
+  }
+
+  .navigation__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__list {
+    display: none;
+    background-color: $color-default-white;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+
+
+    @include vp-1440 {
+      position: relative;
+      display: flex;
+      gap: 20px;
+
+
+    }
+
+    &--active {
+      display: block;
+
+      @include vp-1440 {
+        position: relative;
+        display: flex;
+        gap: 20px;
+
+
+      }
+    }
+  }
+
+  .navigation__item--dropdown {
+    position: relative;
+
+    ul {
+      li a {
+        color: #6E7275;
+      }
+
+      @include vp-768 {
+        display: none;
+      }
+
+      @include vp-1440 {
+        position: absolute;
+        top: 100%;
+        box-shadow: 0px 4px 26px 0px #00000014;
+        width: max-content;
+      }
+    }
+
+    svg {
+      display: none;
+
+      @include vp-768 {
+        display: inline;
+      }
+    }
+
+    &:hover {
+      svg {
+        transform: rotate(180deg);
+        transition-duration: 0.2s;
+      }
+
+      ul {
+        @include vp-768 {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .navigation__item--dropdown {
+
+    &:hover,
+    &:focus,
+    &:active {
+      a {
+        color: $color-twine;
+      }
+
+      ul li a {
+        margin-left: 0;
+        color: #6E7275;
+
+        @include vp-1440 {
+          color: $color-midnight;
+          display: flex;
+
+          span {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    ul li {
+      &:hover,
+      &:focus,
+      &:active {
+        a {
+          color: $color-twine;
+        }
+      }
+    }
+
+    ul {
+      background-color: $color-default-white;
+    }
+  }
+
+  .desktop {
+    display: none;
+
+    @include vp-1440 {
+      display: flex;
+      margin-left: auto;
+    }
+  }
+
+  .not-desktop {
+    @include vp-1440 {
+      display: none;
+    }
+  }
+}
