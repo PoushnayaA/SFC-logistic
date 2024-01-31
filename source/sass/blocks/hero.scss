@@ -23,7 +23,7 @@
       height: 585px;
     }
 
-
+    overflow: hidden;
   }
 
   .hero__text-wrapper {
@@ -36,6 +36,7 @@
     height: max-content;
     margin: 0;
     width: 100%;
+
     max-width: 1240px;
 
     @include vp-768 {

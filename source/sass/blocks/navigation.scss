@@ -1,6 +1,10 @@
 .navigation {
   background-color: $color-default-white;
 
+  .active-link {
+    color: $color-twine;
+  }
+
   .container {
     max-width: 1240px;
     margin: 0 auto;

@@ -2,6 +2,10 @@ import { iosVhFix } from './utils/ios-vh-fix';
 
 import { initServicesSlider } from './modules/slider/init-services-slider';
 import { initNewsSlider } from './modules/slider/init-news-slider';
+import { initGeographyItemsSlider } from './modules/slider/geography-items-slider';
+import { initCountriesSlider } from './modules/slider/countries-slider';
+
+
 
 import { initAccordions } from './modules/accordion/init-accordion';
 
@@ -50,6 +54,9 @@ window.addEventListener('DOMContentLoaded', () => {
   setTimeout(initServicesSlider(), 1000);
   setTimeout(initNewsSlider(), 1000);
   setTimeout(initAccordions(), 1000);
+  setTimeout(initGeographyItemsSlider(), 1000);
+  setTimeout(initCountriesSlider(), 1000);
+
 
 
 

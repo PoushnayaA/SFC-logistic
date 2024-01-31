@@ -12,11 +12,11 @@ const initNewsSlider = () => {
         el: '.swiper-pagination',
         clickable: true,
       },
-      speed: 1000,
-      autoplay: {
-        enabled: true,
-        delay: 5000,
-      },
+      // speed: 1000,
+      // autoplay: {
+      //   enabled: true,
+      //   delay: 5000,
+      // },
       breakpoints: {
 
         768: {

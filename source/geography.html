@@ -78,7 +78,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="navigation__item"><a href="geography.html">Geography of transportation</a></li>
+              <li class="navigation__item"><a class="active-link" href="geography.html">Geography of transportation</a>
+              </li>
               <li class="navigation__item"><a href="supply-chain.html">Supply chain</a></li>
               <li class="navigation__item"><a href="news.html">News</a></li>
               <li class="navigation__item"><a href="faq.html">FAQ</a></li>
@@ -96,112 +97,587 @@
       </div>
     </header>
     <main>
-      <section class="faq faq--light">
-        <h2 class="title">FAQ</h2>
+      <section class="geography-hero">
         <div class="container">
-          <ul class="accordion" data-accordion="parent">
-            <li class="accordion__element" data-accordion="element">
-              <div class="accordion__container">
-                <button class="accordion__button" type="button" data-accordion="button" aria-label="Open.">
-                  <p>Lorem ipsum dolor sit amet consectetur. Enim consequat odio et faucibus lacus feugiat hendrerit</p>
-                  <span class="button__arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
-                      <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5"
-                        d="M20 20 2 2m18 18V5m0 15H5" />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-              <div class="accordion__content" data-accordion="content">
-                <div class="accordion__wrapper">
-                  <p class="accordion__text-content">Potenti porta id pretium risus convallis magna vitae accumsan.
-                    Consectetur feugiat purus faucibus habitant etiam aliquam amet quis. Eget pharetra id diam arcu
-                    lorem ac.</p>
-                </div>
-              </div>
-            </li>
-            <li class="accordion__element" data-accordion="element">
-              <div class="accordion__container">
-                <button class="accordion__button" type="button" data-accordion="button" aria-label="Открыть.">
-                  <p>Eget pharetra id diam arcu lorem ac.</p>
-                  <span class="button__arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
-                      <path stroke="#C1935F" stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5"
-                        d="M20 20 2 2m18 18V5m0 15H5" />
-                    </svg>
-                  </span>
-                </button>
-              </div>
-              <div class="accordion__content" data-accordion="content">
-                <div class="accordion__wrapper">
-                  <p class="accordion__text-content">Potenti porta id pretium risus convallis magna vitae accumsan.
-                    Consectetur feugiat purus faucibus habitant etiam aliquam amet quis. Eget pharetra id diam arcu
-                    lorem ac.</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <img src="./img/sea-content.jpg" width="320" height="428" alt="Main image">
+          <div class="geography-hero__text-wrapper">
+            <h2 class="title">Geography of freight transportation</h2>
+            <p>
+              Global logistics is a key element of the modern global economy, ensuring the efficient movement of goods,
+              information and resources around the world.
+            </p>
+          </div>
         </div>
       </section>
-      <section class="form" id="contacts-form">
-        <div class="container">
-          <h2 class="title">Contact us</h2>
-          <p>We transport cargo across all continents, covering the geography of dozens of countries, forming a new
-            level of cooperation.</p>
-          <form class="form__wrapper">
-            <div class="form__item">
-              <label>
-                <input class="" type="" placeholder="Your Name (required)" required>
-                <span class="error-message"></span>
-              </label>
+      <section class="geography-items">
+        <h2 class="title visually-hidden">Important items.</h2>
+        <p class="geography-items__extra-text"> Its importance is related to a number of important aspects:</p>
+        <div class="container swiper mySwiper" data-slider="geography-items-swiper">
+          <ul class="swiper-wrapper geography-items__list">
+            <li class="swiper-slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                <g clip-path="url(#a)">
+                  <path fill="#C1935F"
+                    d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h32v32H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>
+                Logistics plays a central role in ensuring the movement of goods and raw materials between countries. It
+                allows you to effectively make international transactions, improve the competitiveness of companies and
+                expand the geography of trading partners.
+              </p>
+            </li>
+            <li class="swiper-slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                <g clip-path="url(#a)">
+                  <path fill="#C1935F"
+                    d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h32v32H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>
+                A well-developed logistics infrastructure is an integral part of the economic development of countries
+                and regions. It helps to accelerate production processes, reduce costs and increase economic efficiency.
+              </p>
+            </li>
+            <li class="swiper-slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                <g clip-path="url(#a)">
+                  <path fill="#C1935F"
+                    d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h32v32H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>
+                The quality and efficiency of logistics are factors that affect the competitiveness of companies. More
+                efficient logistics allows you to reduce the costs of warehousing, transportation and inventory
+                management, which helps companies offer lower prices and better customer service.
+              </p>
+            </li>
+            <li class="swiper-slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                <g clip-path="url(#a)">
+                  <path fill="#C1935F"
+                    d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h32v32H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>
+                Logistics helps to ensure a stable flow of goods and services, which is important for maintaining the
+                functioning of various sectors of the economy. This is important especially in the context of crises or
+                other economic disturbances.
+              </p>
+            </li>
+            <li class="swiper-slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                <g clip-path="url(#a)">
+                  <path fill="#C1935F"
+                    d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h32v32H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>
+                Logistics contributes to the improvement of links between different regions, which contributes to their
+                economic and social development. It contributes to increasing accessibility and export-import
+                operations, contributes to the creation of highways and communication routes between countries.
+              </p>
+            </li>
+            <li class="swiper-slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                <g clip-path="url(#a)">
+                  <path fill="#C1935F"
+                    d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h32v32H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>
+                Global logistics has a significant impact on the global economy and the development of countries.
+                Innovation, development of transport infrastructure and more efficient use of resources help to further
+                develop this industry and its importance on a global scale.
+              </p>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="geography">
+        <h2 class="title">Geography</h2>
+        <p class="geography__extra-text">The geography of freight transportation of a logistics company in Europe and
+          the Middle East may include many countries and regions. Here are some of them:</p>
+        <div class="container swiper mySwiper" data-slider="countries-swiper">
+          <ul class="swiper-wrapper geography__list">
+            <li class="swiper-slide">
+              <div class="geography__img">
+                <img src="./img/europe-item.jpg">
+              </div>
+              <h3>Europe</h3>
+              <p>
+                A logistics company can provide freight transportation throughout Europe, covering countries such as
+                Germany, France, Italy, Spain, the United Kingdom, the Netherlands and others. Within the framework of
+                the European Union, there are uniform rules for the transportation of goods, which facilitates logistics
+                and transportation of goods.
+              </p>
+            </li>
+            <li class="swiper-slide">
+              <div class="geography__img">
+                <img src="./img/middle-east-item.jpg">
+              </div>
+              <h3>Middle East</h3>
+              <p>
+                This region includes countries such as Saudi Arabia, UAE (United Arab Emirates), Qatar, Iran, Israel and
+                others. The Middle East is an important trading partner for Europe, and many logistics companies provide
+                freight transportation in this region.
+              </p>
+            </li>
+            <li class="swiper-slide">
+              <div class="geography__img">
+                <img src="./img/north-africa-item.jpg">
+              </div>
+              <h3>North Africa</h3>
+              <p>
+                Some logistics companies provide freight transportation to North African countries such as Morocco,
+                Egypt, Tunisia and others. This region is an important link between Europe and the Middle East.
+              </p>
+            </li>
+            <li class="swiper-slide">
+              <div class="geography__img">
+                <img src="./img/caucasus-item.jpg">
+              </div>
+              <h3>Caucasus and Central Asia</h3>
+              <p>
+                Some logistics companies provide cargo transportation to the Caucasus countries such as Georgia, Armenia
+                and Azerbaijan, as well as to Central Asian countries such as Kazakhstan, Uzbekistan and Turkmenistan.
+                These countries play an important role in transport links between Europe and Asia.
+              </p>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="country">
+        <h2 class="title visually-hidden">Countries.</h2>
+        <!-- <div class="container"> -->
+        <ul class="accordion" data-accordion="parent">
+          <li class="accordion__element" data-accordion="element">
+            <div class="accordion__container">
+              <button class="accordion__button" type="button" data-accordion="button" aria-label="Open.">
+                <p>Europe</p>
+                <span class="button__arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                    <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5"
+                      d="M20 20 2 2m18 18V5m0 15H5" />
+                  </svg>
+                </span>
+              </button>
             </div>
-            <div class="form__item">
-              <label>
-                <input class="" type="" placeholder="Your e-mail">
-                <span class="error-message"></span>
-              </label>
-            </div>
-            <div class="form__item">
-              <label>
-                <input class="" type="" placeholder="Your company">
-                <span class="error-message"></span>
-              </label>
-            </div>
-            <div class="form__item">
-              <label>
-                <input class="" type="" placeholder="Your cargo">
-                <span class="error-message"></span>
-              </label>
-            </div>
-            <div class="form__item">
-              <label>
-                <input class="" type="" placeholder="Port of loading">
-                <span class="error-message"></span>
-              </label>
-            </div>
-            <div class="form__item">
-              <label>
-                <input class="" type="" placeholder="Port of discharge">
-                <span class="error-message"></span>
-              </label>
-            </div>
-            <div class="form__item form__item--message">
-              <label>
-                <input class="" type="" placeholder="Message" data-input="">
-                <span class="error-message"></span>
-              </label>
-            </div>
-            <div class="form__buttons">
-              <input class="transparent-button" type="submit" value="Call back"></input>
-              <div class="form__item form__item--checkbox">
-                <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="agreement" />
-                  <div class="checkbox__checkmark"></div>
-                  <div class="checkbox__body">I agree to Terms & Conditions and Privacy Policy *</div>
-                </label>
+            <div class="accordion__content" data-accordion="content">
+              <div class="accordion__wrapper">
+                <p class="accordion__text-content">
+                  Europe plays an important role in international logistics due to its geographical location and
+                  developed infrastructure.
+                </p>
+                <div class="accordion__img">
+                  <img src="./img/europe-content.jpg">
+                </div>
+                <ul class="service__list">
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>Transport hub</h3>
+                    </div>
+                    <p>
+                      Europe is an important transport hub between Asia and North America. There are many major ports
+                      located here, such as Rotterdam, Hamburg and Antwerp, which provide maritime communication between
+                      the continents. This allows logistics companies to organize transportation and delivery of goods
+                      to various countries of the world.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>Developed network</h3>
+                    </div>
+                    <p>
+                      Europe has a developed network of roads and railways, which provides transport links between the
+                      countries of the region. Thanks to this, goods can be delivered quickly and efficiently to
+                      anywhere in Europe, as well as to other regions such as the Middle East.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>logistics parks</h3>
+                    </div>
+                    <p>
+                      Europe has a well-developed system of logistics parks, warehouses and distribution centers that
+                      ensure efficient cargo handling. This greatly simplifies the logistics operations of companies, as
+                      they can use modern technologies and methods to manage warehouses and ensure efficient delivery of
+                      goods.
+                    </p>
+                  </li>
+                </ul>
+                <p class="accordion__text-content">Thus, Europe is a key region in international logistics. Its
+                  geographical location, well-developed transport infrastructure and logistics capabilities make this
+                  region attractive for logistics companies that seek to ensure fast and reliable cargo delivery in
+                  Europe and the Middle East.</p>
               </div>
             </div>
-          </form>
+          </li>
+          <li class="accordion__element" data-accordion="element">
+            <div class="accordion__container">
+              <button class="accordion__button" type="button" data-accordion="button" aria-label="Open.">
+                <p>Middle East</p>
+                <span class="button__arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                    <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5"
+                      d="M20 20 2 2m18 18V5m0 15H5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div class="accordion__content" data-accordion="content">
+              <div class="accordion__wrapper">
+                <p class="accordion__text-content">
+                  Europe plays an important role in international logistics due to its geographical location and
+                  developed infrastructure.
+                </p>
+                <div class="accordion__img">
+                  <img src="./img/middle-east-content.jpg">
+                </div>
+                <ul class="service__list">
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>Transport hub</h3>
+                    </div>
+                    <p>
+                      Europe is an important transport hub between Asia and North America. There are many major ports
+                      located here, such as Rotterdam, Hamburg and Antwerp, which provide maritime communication between
+                      the continents. This allows logistics companies to organize transportation and delivery of goods
+                      to various countries of the world.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>Developed network</h3>
+                    </div>
+                    <p>
+                      Europe has a developed network of roads and railways, which provides transport links between the
+                      countries of the region. Thanks to this, goods can be delivered quickly and efficiently to
+                      anywhere in Europe, as well as to other regions such as the Middle East.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>logistics parks</h3>
+                    </div>
+                    <p>
+                      Europe has a well-developed system of logistics parks, warehouses and distribution centers that
+                      ensure efficient cargo handling. This greatly simplifies the logistics operations of companies, as
+                      they can use modern technologies and methods to manage warehouses and ensure efficient delivery of
+                      goods.
+                    </p>
+                  </li>
+                </ul>
+                <p>Thus, Europe is a key region in international logistics. Its geographical location, well-developed
+                  transport infrastructure and logistics capabilities make this region attractive for logistics
+                  companies that seek to ensure fast and reliable cargo delivery in Europe and the Middle East.</p>
+              </div>
+            </div>
+          </li>
+          <li class="accordion__element" data-accordion="element">
+            <div class="accordion__container">
+              <button class="accordion__button" type="button" data-accordion="button" aria-label="Open.">
+                <p>North Africa</p>
+                <span class="button__arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                    <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5"
+                      d="M20 20 2 2m18 18V5m0 15H5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div class="accordion__content" data-accordion="content">
+              <div class="accordion__wrapper">
+                <p class="accordion__text-content">
+                  Europe plays an important role in international logistics due to its geographical location and
+                  developed infrastructure.
+                </p>
+                <div class="accordion__img">
+                  <img src="./img/north-africa-content.jpg">
+                </div>
+                <ul class="service__list">
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>Transport hub</h3>
+                    </div>
+                    <p>
+                      Europe is an important transport hub between Asia and North America. There are many major ports
+                      located here, such as Rotterdam, Hamburg and Antwerp, which provide maritime communication between
+                      the continents. This allows logistics companies to organize transportation and delivery of goods
+                      to various countries of the world.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>Developed network</h3>
+                    </div>
+                    <p>
+                      Europe has a developed network of roads and railways, which provides transport links between the
+                      countries of the region. Thanks to this, goods can be delivered quickly and efficiently to
+                      anywhere in Europe, as well as to other regions such as the Middle East.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>logistics parks</h3>
+                    </div>
+                    <p>
+                      Europe has a well-developed system of logistics parks, warehouses and distribution centers that
+                      ensure efficient cargo handling. This greatly simplifies the logistics operations of companies, as
+                      they can use modern technologies and methods to manage warehouses and ensure efficient delivery of
+                      goods.
+                    </p>
+                  </li>
+                </ul>
+                <p>Thus, Europe is a key region in international logistics. Its geographical location, well-developed
+                  transport infrastructure and logistics capabilities make this region attractive for logistics
+                  companies that seek to ensure fast and reliable cargo delivery in Europe and the Middle East.</p>
+              </div>
+            </div>
+          </li>
+          <li class="accordion__element" data-accordion="element">
+            <div class="accordion__container">
+              <button class="accordion__button" type="button" data-accordion="button" aria-label="Open.">
+                <p>Caucasus and Central Asia</p>
+                <span class="button__arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none">
+                    <path stroke-linecap="square" stroke-linejoin="round" stroke-width="1.5"
+                      d="M20 20 2 2m18 18V5m0 15H5" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <div class="accordion__content" data-accordion="content">
+              <div class="accordion__wrapper">
+                <p class="accordion__text-content">
+                  Europe plays an important role in international logistics due to its geographical location and
+                  developed infrastructure.
+                </p>
+                <div class="accordion__img">
+                  <img src="./img/caucasus-content.jpg">
+                </div>
+                <ul class="service__list">
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>Transport hub</h3>
+                    </div>
+                    <p>
+                      Europe is an important transport hub between Asia and North America. There are many major ports
+                      located here, such as Rotterdam, Hamburg and Antwerp, which provide maritime communication between
+                      the continents. This allows logistics companies to organize transportation and delivery of goods
+                      to various countries of the world.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>Developed network</h3>
+                    </div>
+                    <p>
+                      Europe has a developed network of roads and railways, which provides transport links between the
+                      countries of the region. Thanks to this, goods can be delivered quickly and efficiently to
+                      anywhere in Europe, as well as to other regions such as the Middle East.
+                    </p>
+                  </li>
+                  <li>
+                    <div class="service__title-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none">
+                        <g clip-path="url(#a)">
+                          <path fill="#C1935F"
+                            d="m18.576 16.252-1.434.83V32l12.913-7.456V9.627l-11.48 6.625Zm2.337-13.377L15.947 0 2.676 7.661l4.972 2.875 13.265-7.661Zm8.299 4.786-5.723-3.26-13.265 7.662.757.392 4.966 2.868 4.94-2.848 8.325-4.814Zm-19.99 9.886-2.377-1.222v-3.797l-4.9-2.822v14.812l12.82 7.402V17.11l-5.543-3.194v3.632Z" />
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M0 0h32v32H0z" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <h3>logistics parks</h3>
+                    </div>
+                    <p>
+                      Europe has a well-developed system of logistics parks, warehouses and distribution centers that
+                      ensure efficient cargo handling. This greatly simplifies the logistics operations of companies, as
+                      they can use modern technologies and methods to manage warehouses and ensure efficient delivery of
+                      goods.
+                    </p>
+                  </li>
+                </ul>
+                <p>Thus, Europe is a key region in international logistics. Its geographical location, well-developed
+                  transport infrastructure and logistics capabilities make this region attractive for logistics
+                  companies that seek to ensure fast and reliable cargo delivery in Europe and the Middle East.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </section>
+      <section class="description">
+        <div class="container">
+          <div class="description__img">
+            <img src="./img/content-photo.jpg">
+          </div>
+          <p class="description__text">
+            The geography of cargo transportation by a logistics company in Europe and the Middle East can be very
+            diverse and depends on the specific needs of the client and the type of cargo. Logistics companies can offer
+            various types of transportation, including road, rail, sea and air transportation, to ensure efficient
+            delivery of goods to the specified regions.
+            <br><br>
+            We are always on the lookout for innovative ideas to solve the problems our customers are facing now and
+            will face tomorrow. We are not afraid to look at the situation from a new angle and bring our ideas to life.
+            We provide 360 degree services in the field of logistics.
+          </p>
         </div>
       </section>
     </main>
@@ -213,7 +689,7 @@
             <img src="./img/logo.svg" width="63" height="32" alt="Logo.">
           </a>
           <ul class="footer__list">
-            <li><a href="#">About us</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="#">Partnerships</a></li>
             <li><a href="#">Investors</a></li>
             <li><a href="#">Careers</a></li>
@@ -269,7 +745,10 @@
               <li>
                 <a href="#">
                   <span class="visually-hidden">YouTube.</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none"><path fill="#C1935F" d="M19.103 2.534A2.356 2.356 0 0 0 17.423.89C15.942.5 10 .5 10 .5S4.059.5 2.577.889a2.356 2.356 0 0 0-1.68 1.645C.5 3.985.5 7.014.5 7.014s0 3.027.397 4.478c.219.8.862 1.405 1.68 1.62C4.059 13.5 10 13.5 10 13.5s5.941 0 7.423-.389c.818-.214 1.462-.818 1.68-1.619.397-1.451.397-4.479.397-4.479s0-3.028-.397-4.479ZM8.057 9.762V4.264l4.966 2.75-4.966 2.748Z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                    <path fill="#C1935F"
+                      d="M19.103 2.534A2.356 2.356 0 0 0 17.423.89C15.942.5 10 .5 10 .5S4.059.5 2.577.889a2.356 2.356 0 0 0-1.68 1.645C.5 3.985.5 7.014.5 7.014s0 3.027.397 4.478c.219.8.862 1.405 1.68 1.62C4.059 13.5 10 13.5 10 13.5s5.941 0 7.423-.389c.818-.214 1.462-.818 1.68-1.619.397-1.451.397-4.479.397-4.479s0-3.028-.397-4.479ZM8.057 9.762V4.264l4.966 2.75-4.966 2.748Z" />
+                  </svg>
                 </a>
               </li>
             </ul>
