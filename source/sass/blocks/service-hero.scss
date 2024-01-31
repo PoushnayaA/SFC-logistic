@@ -11,9 +11,9 @@
   }
 
   .title {
-    @include vp-768 {
+    // @include vp-768 {
       padding: 0;
-    }
+    // }
   }
 
   &::after {

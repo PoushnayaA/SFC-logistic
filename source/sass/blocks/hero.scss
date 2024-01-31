@@ -14,6 +14,7 @@
     width: 100%;
     max-width: none;
     height: 428px;
+
     @include vp-768 {
       height: 440px;
     }

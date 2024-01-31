@@ -2742,6 +2742,7 @@ header {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-top: 12px;
 }
 .form .form__item--checkbox .checkbox input {
   position: absolute;
@@ -2793,7 +2794,7 @@ header {
 }
 @media (min-width: 768px) {
   .form .form__item--checkbox .checkbox .checkbox__checkmark {
-    top: 4px;
+    top: 1px;
   }
 }
 @media (min-width: 1440px) {
@@ -2815,10 +2816,17 @@ header {
   font-weight: 400;
   line-height: 16px;
   color: #dedede;
+  margin-top: 1px;
+}
+@media (min-width: 360px) {
+  .form .form__item--checkbox .checkbox .checkbox__body {
+    margin-top: 6px;
+  }
 }
 @media (min-width: 1440px) {
   .form .form__item--checkbox .checkbox .checkbox__body {
     white-space: nowrap;
+    margin-top: 0;
   }
 }
 
@@ -3333,10 +3341,8 @@ header {
     margin-bottom: 116px;
   }
 }
-@media (min-width: 768px) {
-  .service-hero .title {
-    padding: 0;
-  }
+.service-hero .title {
+  padding: 0;
 }
 .service-hero::after {
   content: "";
@@ -3465,12 +3471,23 @@ header {
 }
 @media (min-width: 1440px) {
   .service .service__extra-text {
-    margin: 18px 0;
+    margin: 18px auto;
+    max-width: 818px;
   }
 }
 .service .service__img {
   margin-top: 67px;
   height: 216px;
+  position: relative;
+}
+.service .service__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(110.78deg, rgba(30, 43, 59, 0.5) 15.86%, rgba(30, 43, 59, 0.00312519) 73.29%, rgba(30, 43, 59, 0) 73.29%, rgba(30, 43, 59, 0) 73.29%);
 }
 .service .service__img img {
   width: 100%;
@@ -3502,7 +3519,7 @@ header {
   .service .service__list {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 20px 60px;
     padding: 30px 20px;
   }
 }
@@ -3515,12 +3532,13 @@ header {
 .service .service__list li {
   padding: 10px 0;
   border-bottom: 1px solid #dedede;
+  cursor: pointer;
 }
 .service .service__list li svg {
   max-width: 32px;
   height: 32px;
   width: 100%;
-  margin-top: 8px;
+  margin-top: 15px;
 }
 .service .service__list li .service__title-wrapper {
   display: -webkit-box;
@@ -3550,12 +3568,21 @@ header {
 .service .service__list li p {
   margin-left: 56px;
   margin-top: 3px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.service .service__list li p.active-text {
+  display: block;
+  overflow: visible;
+  -webkit-transition: 3s;
+  transition: 3s;
 }
 @media (min-width: 1440px) {
   .service .service__list li:hover p {
-    white-space: normal;
+    display: block;
     overflow: visible;
-    text-overflow: ellipsis;
   }
 }
 
@@ -3584,6 +3611,9 @@ header {
     width: 818px;
     margin: 35px auto;
   }
+}
+.advantages .advantages__extra-text--first {
+  margin: 5px auto 50px;
 }
 .advantages .accordion {
   padding: 5px 0;

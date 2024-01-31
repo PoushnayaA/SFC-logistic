@@ -160,12 +160,7 @@
       padding-left: 32px;
       cursor: pointer;
       user-select: none;
-
-      a {
-        // color: $color-burnt-atlantis;
-      }
-
-
+      margin-top: 12px;
     }
 
 
@@ -219,7 +214,7 @@
       transition: background-color 0.25s ease;
 
       @include vp-768 {
-        top: 4px;
+        top: 1px;
       }
 
       @include vp-1440 {
@@ -245,9 +240,15 @@
       font-weight: 400;
       line-height: 16px;
       color: #dedede;
+      margin-top: 1px;
+
+      @include vp-360 {
+        margin-top: 6px;
+      }
 
       @include vp-1440 {
         white-space: nowrap;
+        margin-top: 0;
       }
     }
   }

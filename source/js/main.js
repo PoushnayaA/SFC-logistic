@@ -1,4 +1,4 @@
-import {iosVhFix} from './utils/ios-vh-fix';
+import { iosVhFix } from './utils/ios-vh-fix';
 
 import { initServicesSlider } from './modules/slider/init-services-slider';
 import { initNewsSlider } from './modules/slider/init-news-slider';
@@ -37,6 +37,15 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  const serviceList = document.querySelector('.service__list');
+  if (serviceList) {
+    serviceList.querySelectorAll('li').forEach(element => {
+      element.addEventListener('click', function () {
+        element.querySelector('p').classList.toggle('active-text');
+        console.log(1);
+      })
+    });
+  }
 
   setTimeout(initServicesSlider(), 1000);
   setTimeout(initNewsSlider(), 1000);
