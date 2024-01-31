@@ -1,8 +1,24 @@
 .navigation {
   background-color: $color-default-white;
 
-  li {
+  .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-bottom: 8px;
 
+    @include vp-768 {
+      padding-bottom: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include vp-1440 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  li {
     &:hover,
     &:focus,
     &:active {
@@ -15,7 +31,6 @@
   nav {
     @include vp-1440 {
       display: flex;
-      // justify-content: space-between;
     }
   }
 
@@ -34,9 +49,9 @@
       display: block;
       position: absolute;
       background-color: $color-midnight;
-      height: 3px;
-      width: 22px;
-      top: 13px;
+      height: 4px;
+      width: 38px;
+      top: 18px;
       left: 5px;
       right: 5px;
       transition-duration: 0.3s, 0.1s;
@@ -46,8 +61,8 @@
       &::before {
         position: absolute;
         display: block;
-        height: 3px;
-        top: -7px;
+        height: 4px;
+        top: -10px;
         width: 100%;
         background-color: $color-midnight;
         content: "";
@@ -58,8 +73,8 @@
       &::after {
         position: absolute;
         display: block;
-        height: 3px;
-        bottom: -7px;
+        height: 4px;
+        bottom: -10px;
         width: 100%;
         background-color: $color-midnight;
         content: "";
@@ -95,30 +110,71 @@
     background-color: $color-default-white;
     width: 100%;
     position: absolute;
-    left: 0px;
+    left: 0;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+    padding: 32px 0;
 
+    z-index: 5;
 
     @include vp-1440 {
       position: relative;
       display: flex;
+      // justify-content: center;
+      align-items: center;
       gap: 20px;
-
-
+      padding: 0;
     }
 
     &--active {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
 
       @include vp-1440 {
         position: relative;
         display: flex;
+        flex-direction: row;
         gap: 20px;
 
 
+      }
+    }
+  }
+
+  .navigation__item-contacts {
+    padding-top: 20px;
+    margin: 0 16px;
+    border-top: 1px solid #dedede;
+
+    @include vp-768 {
+      display: none;
+    }
+
+    .navigation-language__links {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0 10px;
+      gap: 17px;
+      text-align: center;
+      position: relative;
+
+      a {
+        color: #6E7275;
+        position: relative;
+
+        &:nth-child(1):after {
+          content: "";
+          position: absolute;
+          left: 105%;
+          top: 0;
+          height: 100%;
+          width: 1px;
+          background-color: #6E7275;
+        }
       }
     }
   }
@@ -127,6 +183,11 @@
     position: relative;
 
     ul {
+      display: flex;
+      flex-direction: column;
+      padding: 16px 0 0;
+      gap: 8px;
+
       li a {
         color: #6E7275;
       }
@@ -159,7 +220,7 @@
 
       ul {
         @include vp-768 {
-          display: block;
+          display: flex;
         }
       }
     }
@@ -172,6 +233,17 @@
     &:active {
       a {
         color: $color-twine;
+      }
+
+      ul {
+        @include vp-1440 {
+          display: flex;
+          flex-direction: column;
+          padding: 16px;
+          gap: 10px;
+          box-shadow: 0px 4px 26px 0px #00000014;
+          border-radius: 5px;
+        }
       }
 
       ul li a {
@@ -190,6 +262,7 @@
     }
 
     ul li {
+
       &:hover,
       &:focus,
       &:active {

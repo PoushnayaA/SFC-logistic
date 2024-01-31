@@ -1,9 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
 
 import { initServicesSlider } from './modules/slider/init-services-slider';
 import { initNewsSlider } from './modules/slider/init-news-slider';
+
+import { initAccordions } from './modules/accordion/init-accordion';
 
 // ---------------------------------
 
@@ -37,8 +37,10 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  initServicesSlider();
-  initNewsSlider();
+
+  setTimeout(initServicesSlider(), 1000);
+  setTimeout(initNewsSlider(), 1000);
+  setTimeout(initAccordions(), 1000);
 
 
 

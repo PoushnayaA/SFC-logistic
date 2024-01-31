@@ -26,6 +26,7 @@
   .container {
     @include vp-1440 {
       display: grid;
+      gap: 20px;
       grid-template-columns: 1fr 1fr;
     }
   }

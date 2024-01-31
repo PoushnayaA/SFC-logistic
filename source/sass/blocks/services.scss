@@ -1,11 +1,11 @@
 .services {
-  margin-bottom: 60px;
+  margin-bottom: 32px;
 
   .services__list {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    gap: 5px;
+    gap: 25px;
     max-width: 1240px;
     margin: 0 auto;
 
@@ -19,18 +19,37 @@
     }
   }
 
+  .services__list--page {
+    padding: 50px 0 20px;
+
+    @include vp-768 {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    @include vp-1440 {
+      padding-top: 40px;
+      padding-bottom: 70px;
+    }
+  }
+
   .services__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #dedede;
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+    }
 
     p {
       font-size: 16px;
       font-weight: 400;
       line-height: 22px;
       color: #6E7275;
+      margin-bottom: 8px;
     }
 
     h3 {
@@ -41,6 +60,8 @@
       text-align: center;
       color: $color-cello;
       font-family: $ff-syncopate;
+      margin-top: 8px;
+      margin-bottom: 13px;
     }
   }
 }

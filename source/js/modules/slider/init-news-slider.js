@@ -6,7 +6,7 @@ const initNewsSlider = () => {
     new Swiper(sliderNews, {
       keyboard: true,
       spaceBetween: 16,
-      loop: true,
+      // loop: true,
       slidesPerView: 1,
       pagination: {
         el: '.swiper-pagination',
@@ -16,6 +16,18 @@ const initNewsSlider = () => {
       autoplay: {
         enabled: true,
         delay: 5000,
+      },
+      breakpoints: {
+
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
       },
     });
   }

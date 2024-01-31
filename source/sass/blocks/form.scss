@@ -1,20 +1,52 @@
 .form {
   color: $color-default-white;
   background-color: $color-cello;
-  // display: grid;
-  // grid-template-columns: 1fr;
+
+  @include vp-768 {
+    margin: 25px 20px 0;
+  }
+
+  @include vp-1440 {
+    max-width: 1240px;
+    margin: 62px auto;
+  }
+
+  .container {
+    padding-bottom: 0;
+
+    @include vp-768 {
+      padding: 14px 30px;
+    }
+
+    @include vp-1440 {
+      padding-bottom: 56px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 38px;
+
+    @include vp-1440 {
+      max-width: 540px;
+    }
+  }
 
   .form__wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 20px;
 
     @include vp-768 {
       grid-template-columns: 1fr 1fr;
-      gap: 0 10px;
+      gap: 20px 45px;
     }
 
     @include vp-1440 {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 326px;
+      gap: 20px 50px;
     }
   }
 
@@ -23,6 +55,9 @@
     font-size: 24px;
     line-height: 32px;
     text-align: left;
+    color: $color-default-white;
+    padding: 0;
+    margin: 25px 0 3px;
   }
 
   .form__item {
@@ -36,48 +71,184 @@
     padding: 12px 0;
     width: 100%;
     color: $color-default-white;
-font-size: 16px;
-font-weight: 400;
-line-height: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
 
     &::placeholder {
       color: #dedede;
     }
+  }
 
+  &--pages {
+    margin-bottom: 40px;
   }
 
   .form__buttons {
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 39px 0 36px;
+
     @include vp-768 {
       flex-direction: row;
+      grid-column-start: 1;
+      grid-column-end: -1;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      // justify-content: space-between;
+      width: 100%;
+      gap: 20px;
+      padding-bottom: 5px;
     }
+
     @include vp-1440 {
       flex-direction: column;
       grid-column-start: -1;
       grid-column-end: -2;
       grid-row-start: 2;
       grid-row-end: 4;
+      gap: 0;
+      padding-bottom: 0;
     }
   }
 
   .transparent-button {
     background-color: $color-default-white;
     color: $color-cello;
+    margin-bottom: 17px;
 
+    @include vp-768 {
+      width: 436px;
+    }
 
+    @include vp-1440 {
+      width: 100%;
+      margin-bottom: 0;
+    }
   }
 
   .form__item--message {
+    margin-top: 18px;
+
     @include vp-768 {
       grid-column-start: 1;
       grid-column-end: -1;
     }
+
     @include vp-1440 {
       grid-column-start: auto;
       grid-column-end: auto;
+      margin-top: 0;
     }
 
+  }
+
+  .form__item--checkbox {
+    @include vp-1440 {
+      // display: flex;
+      min-height: 20px;
+      // align-items: center;
+      // flex-direction: column;
+      // justify-content: center;
+      margin-top: 10px;
+    }
+
+
+    .checkbox {
+      display: inline-block;
+      position: relative;
+      padding-left: 32px;
+      cursor: pointer;
+      user-select: none;
+
+      a {
+        // color: $color-burnt-atlantis;
+      }
+
+
+    }
+
+
+    .checkbox input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkbox input:checked~.checkbox__checkmark:after {
+      opacity: 1;
+      display: inline-block;
+      width: 8px;
+      height: 4px;
+      border: 2px solid $color-default-white;
+      border-width: 1.5px 1.5px 0 0;
+      transform: rotate(135deg);
+      // position: relative;
+      position: absolute;
+      top: 5px;
+      left: 4px;
+    }
+
+    .checkbox input:checked~.checkbox__checkmark:before {
+      opacity: 1;
+      display: inline-block;
+      width: 10px;
+      height: 6px;
+      border: 2px solid $color-default-white;
+      border-width: 0 0 2px 2px;
+      transform: rotate(-45deg);
+      // position: relative;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      border-radius: 1px;
+
+    }
+
+    .checkbox .checkbox__checkmark {
+      position: absolute;
+      top: 5px;
+      left: 2px;
+      background-color: transparent;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      border: 2px solid #F6F6F6;
+      transition: background-color 0.25s ease;
+
+      @include vp-768 {
+        top: 4px;
+      }
+
+      @include vp-1440 {
+        top: 0;
+      }
+    }
+
+
+
+    /* tick */
+    .checkbox .checkbox__checkmark:after,
+    .checkbox .checkbox__checkmark:before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      width: 12px;
+      height: 8px;
+      opacity: 0;
+    }
+
+    .checkbox .checkbox__body {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      color: #dedede;
+
+      @include vp-1440 {
+        white-space: nowrap;
+      }
+    }
   }
 }
