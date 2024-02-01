@@ -148,3 +148,45 @@
     // }
   }
 }
+
+.service--supply {
+  margin-bottom: 45px;
+  @include vp-1440 {
+    margin-bottom: 100px;
+  }
+
+  .service__list {
+    @include vp-768 {
+      gap: 0 60px;
+    }
+
+    @include vp-1440 {
+      gap: 13px 60px;
+      margin-bottom: 100px;
+    }
+
+    li {
+      padding: 35px 0;
+
+      @include vp-768 {
+        padding: 30px 0;
+      }
+
+      @include vp-1440 {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .service__img {
+    margin-top: 54px;
+  }
+
+  .service__extra-text {
+    @include vp-1440 {
+      max-width: 100%;
+      // margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+}

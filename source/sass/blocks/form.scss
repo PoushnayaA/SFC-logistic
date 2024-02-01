@@ -1,9 +1,10 @@
 .form {
   color: $color-default-white;
   background-color: $color-cello;
+  margin-bottom: 64px;
 
   @include vp-768 {
-    margin: 25px 20px 0;
+    margin: 25px 20px 64px;
   }
 
   @include vp-1440 {

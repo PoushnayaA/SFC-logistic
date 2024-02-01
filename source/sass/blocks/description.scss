@@ -2,6 +2,10 @@
   margin-top: 45px;
   margin-bottom: 18px;
 
+  @include vp-1440 {
+    margin-bottom: 80px;
+  }
+
   .container {
     display: grid;
 
@@ -29,5 +33,10 @@
     }
   }
 
-  .description__text {}
+  .description__text {
+    @include vp-1440 {
+      padding: 30px 50px;
+      margin-left: 70px;
+    }
+  }
 }

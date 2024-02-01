@@ -1,6 +1,10 @@
 .geography-items {
   margin-bottom: 66px;
 
+  @include vp-1440 {
+    margin-bottom: 80px;
+  }
+
   .geography-items__extra-text {
     text-align: center;
     color: #6E7275;
@@ -38,7 +42,7 @@
 
     @include vp-768 {
       display: grid;
-      gap: 30px 20px;
+      gap: 10px 60px;
       grid-template-columns: 1fr 1fr;
     }
 
@@ -53,7 +57,7 @@
       display: flex;
       padding-right: 14px;
       padding-bottom: 20px;
-      border-bottom: 1px solid #dedede;
+      border-bottom: 1px solid #F6F6F6;
 
       @include vp-768 {
         width: 100% !important;
