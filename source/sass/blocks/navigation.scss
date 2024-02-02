@@ -186,6 +186,7 @@
   .navigation__item--dropdown {
     position: relative;
 
+
     ul {
       display: flex;
       flex-direction: column;
@@ -232,11 +233,20 @@
 
   .navigation__item--dropdown {
 
+    svg {
+      fill: transparent;
+      stroke: $color-midnight;
+      margin-bottom: 2px;
+    }
+
     &:hover,
     &:focus,
     &:active {
+      svg {
+        stroke: #DFB17D;
+      }
       a {
-        color: $color-twine;
+        color: #DFB17D;
       }
 
       ul {
@@ -271,7 +281,7 @@
       &:focus,
       &:active {
         a {
-          color: $color-twine;
+          color: #DFB17D;
         }
       }
     }

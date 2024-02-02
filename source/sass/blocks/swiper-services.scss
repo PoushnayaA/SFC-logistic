@@ -1,4 +1,16 @@
 .swiper-services {
+  margin-bottom: 65px;
+
+  @include vp-1440 {
+    margin-top: 75px;
+    margin-bottom: 95px;
+  }
+
+  @include vp-1440 {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .swiper-services__item {
     position: relative;
     width: 100%;
@@ -31,14 +43,14 @@
 
   .swiper-services__text {
     position: absolute;
-    top: 50%;
+    top: 30px;
     bottom: 0;
     left: 16px;
-    transform: translate(0, -50%);
+    // transform: translate(0, -50%);
     right: 16px;
     z-index: 3;
 
-    width: 100%;
+    // width: 100%;
     max-width: 1240px;
 
     @include vp-768 {
@@ -48,8 +60,11 @@
     }
 
     @include vp-1440 {
-      bottom: 0;
-      top: auto;
+      // bottom: 0;
+      top: 50%;
+      // top: auto;
+      transform: translate(0,-50%);
+      left: 20px;
       padding: 0;
     }
 
@@ -78,8 +93,18 @@
   .transparent-button {
     background-color: $color-twine;
     color: $color-default-white;
-
     margin-bottom: 20px;
+    width: 100%;
+
+    @include vp-768 {
+      width: 256px;
+    }
+
+    &:hover,
+&:focus,
+&:active {
+  background-color: #DFB17D;
+}
   }
 
   .swiper-pagination {
@@ -95,6 +120,11 @@
     max-width: 60px;
     height: 4px;
     border-radius: 0;
+
+    &:hover,
+&:active {
+  background-color: #DFB17D;
+}
   }
 
   .swiper-pagination-bullet-active {

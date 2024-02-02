@@ -1,4 +1,9 @@
 .swiper-news {
+  margin-bottom: 60px;
+  @include vp-1440 {
+    margin-bottom: 100px;
+  }
+
   .transparent-button {
     width: 100%;
     max-width: 256px;
@@ -167,7 +172,7 @@
     display: flex;
     gap: 5px;
     justify-content: center;
-    bottom: 80px;
+    bottom: 100px;
   }
 
   .swiper-pagination-bullet {
@@ -184,6 +189,12 @@
   }
 
   .transparent-button {
-    margin-top: 40px;
+    margin-top: 80px;
+    max-width: none;
+    width: 100%;
+
+    @include vp-768 {
+      width: 256px;
+    }
   }
 }

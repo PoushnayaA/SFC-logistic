@@ -1,11 +1,17 @@
 .case {
+  margin-top: 45px;
+  margin-bottom: 58px;
+
+  @include vp-1440 {
+    margin-bottom: 90px;
+  }
+
   .title {
     text-align: left;
   }
 
   h2 {
     max-width: 1240px;
-    padding: 0 16px;
     font-size: 32px;
     font-weight: 700;
     line-height: 43px;
@@ -46,19 +52,29 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
+
+    @include vp-1440 {
+      margin-top: 40px;
+    }
   }
 
   .transparent-button {
     width: 100%;
+    margin-top: 45px;
 
     @include vp-768 {
       width: 256px;
+    }
+
+    @include vp-1440 {
+      margin-top: 60px;
     }
   }
 
   .container {
     max-width: 1240px;
     margin: 0 auto;
+    padding-top: 40px;
 
     @include vp-1440 {
       display: grid;

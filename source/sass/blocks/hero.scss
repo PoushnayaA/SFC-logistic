@@ -1,4 +1,10 @@
 .hero {
+  margin-bottom: 65px;
+
+  @include vp-1440 {
+    margin-bottom: 75px;
+  }
+
   img {
     object-fit: cover;
     position: absolute;
@@ -13,7 +19,7 @@
     position: relative;
     width: 100%;
     max-width: none;
-    height: 428px;
+    height: 438px;
 
     @include vp-768 {
       height: 440px;

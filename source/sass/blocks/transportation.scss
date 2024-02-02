@@ -1,4 +1,24 @@
 .transportation {
+
+  @include vp-1440 {
+    margin-bottom: 90px;
+  }
+
+
+  .transparent-button {
+    width: 100%;
+    @include vp-768 {
+      width: 256px;
+    }
+  }
+
+  .transportation__text-wrapper {
+    @include vp-1440 {
+      margin-left: 110px;
+      margin-top: 30px;
+    }
+  }
+
   .transportation__img {
     height: 216px;
     width: 100%;
@@ -15,7 +35,7 @@
     }
 
     @include vp-1440 {
-      height: 593px;
+      height: 393px;
       grid-row-start: 1;
       grid-row-end: -1;
       grid-column-start: 1;
@@ -24,6 +44,7 @@
   }
 
   .container {
+    padding-bottom: 35px;
     @include vp-1440 {
       display: grid;
       gap: 20px;

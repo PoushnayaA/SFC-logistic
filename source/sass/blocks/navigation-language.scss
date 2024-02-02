@@ -10,8 +10,8 @@
     position: relative;
 
     @include vp-768 {
-    align-items: center;
-    padding: 16px 22px;
+      align-items: center;
+      padding: 16px 22px;
     }
 
     @include vp-1440 {
@@ -22,9 +22,9 @@
 
   .navigation-language__logo-wrapper {
     @include vp-768 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
   }
 
@@ -32,15 +32,28 @@
     border: none;
     background-color: $color-transparent;
     color: $color-default-white;
+    transition-duration: 0.2s;
 
     svg {
       transition-duration: 0.2s;
+      fill: transparent;
+      stroke: $color-default-white;
     }
 
     &.active {
       svg {
         transform: rotate(180deg);
         transition-duration: 0.2s;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #DFB17D;
+
+      svg {
+        stroke: #DFB17D;
       }
     }
   }
@@ -88,9 +101,18 @@
     right: 0;
     top: 90%;
 
-
     li {
       cursor: pointer;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #DFB17D;
+      }
+    }
+
+    li.active {
+      color: $color-twine;
     }
   }
 

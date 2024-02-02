@@ -4,14 +4,36 @@
   background-color: #F6F6F6;
   margin-bottom: 64px;
 
+  @include vp-1440 {
+    margin-top: 150px;
+    margin-bottom: 35px;
+  }
+
   &--light {
     margin-top: 0;
     margin-bottom: 20px;
     padding: 0;
     background-color: $color-default-white;
+
+    @include vp-1440 {
+      margin-top: 80px;
+    }
   }
 
   .title {
     border-color: #dedede;
+  }
+
+  .accordion__button {
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #DFB17D;
+
+      svg {
+        stroke: #DFB17D !important;
+      }
+    }
   }
 }

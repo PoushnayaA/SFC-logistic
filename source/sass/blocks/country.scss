@@ -57,11 +57,23 @@
 
     @include vp-1440 {
       padding: 0;
+      max-width: 1240px;
+      margin: 0 auto;
     }
   }
 
   .accordion__button {
     padding: 20px 16px;
+
+    &:hover,
+&:focus,
+&:active {
+  color: #DFB17D;
+
+  svg {
+    stroke: #DFB17D;;
+  }
+}
 
     @include vp-1440 {
       padding: 20px 0;

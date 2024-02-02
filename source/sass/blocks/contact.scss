@@ -75,31 +75,41 @@
       height: auto;
       padding: 30px 30px;
     }
+
+
+    a {
+      &:hover,
+      &:focus,
+      &:active {
+          color: #DFB17D;
+        }
+      }
+
+    }
   }
 
-  .contact__img {
-    height: 538px;
+.contact__img {
+  height: 538px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  @include vp-768 {
+    height: 593px;
+  }
+
+  img {
+    height: 100%;
     width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
+    object-fit: cover;
+    object-position: 70% top;
 
     @include vp-768 {
-      height: 593px;
-    }
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: 70% top;
-
-      @include vp-768 {
-        object-position: 30% top;
-      }
+      object-position: 30% top;
     }
   }
+}
 
-  .form {
-    margin-bottom: 30px;
-  }
+.form {
+  margin-bottom: 30px;
 }

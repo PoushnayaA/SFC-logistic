@@ -74,4 +74,28 @@
     color: $color-midnight;
     margin: 5px 0;
   }
+
+  .accordion__button {
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #DFB17D;
+
+      svg {
+        stroke: #DFB17D !important;
+      }
+    }
+
+    .button__arrow {
+      max-width: 20px;
+      min-width: 20px;
+      width: 100%;
+      height: 20px;
+    }
+
+    @include vp-1440 {
+      padding: 20px 10px;
+    }
+  }
 }

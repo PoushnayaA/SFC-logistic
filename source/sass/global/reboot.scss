@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   color: $color-midnight;
   font-family: $ff-montserrat;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -22,10 +23,7 @@ html {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // оптимизация выравнивания шрифта относительно центра строки
   text-rendering: optimizeLegibility;
-  // если по прежнему есть проблемы с выравниванием
-  // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
 }
 
 body {
@@ -140,10 +138,17 @@ button, a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 10px 3px;
   width: 171px;
   color: $color-cello;
   font-family: $ff-syncopate;
+
+  &:hover,
+&:focus,
+&:active {
+  color: #DFB17D;
+  border-color: #DFB17D;
+}
 }
 
 header {

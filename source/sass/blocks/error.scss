@@ -1,0 +1,67 @@
+.error {
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  .error__img {
+    position: relative;
+
+    width: 100%;
+    height: 100px;
+    max-width: 1018px;
+    margin: 0 auto;
+
+    @include vp-768 {
+      height: 247px;
+    }
+
+    @include vp-1440 {
+      height: 357px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+  }
+
+  h3 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 108px;
+
+
+    @include vp-768 {
+      font-size: 152px;
+      font-weight: 700;
+      line-height: 205px;
+    }
+
+    @include vp-1440 {
+      font-size: 200px;
+font-weight: 700;
+line-height: 270px;
+    }
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $ff-syncopate;
+
+    text-align: center;
+    color: $color-default-white;
+  }
+
+  p {
+    text-align: center;
+    margin: 60px 0;
+  }
+
+  .transparent-button {
+    margin: 0 auto;
+    width: 256px;
+  }
+}

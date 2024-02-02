@@ -67,6 +67,8 @@
     overflow: hidden;
     padding: 20px;
 
+
+
     @include vp-768 {
       grid-template-columns: 1fr 1fr;
       gap: 20px 60px;
@@ -82,6 +84,12 @@
       padding: 10px 0;
       border-bottom: 1px solid #dedede;
       cursor: pointer;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #DFB17D;
+      }
 
       svg {
         max-width: 32px;
