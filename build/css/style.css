@@ -2726,6 +2726,9 @@ header {
     max-width: 540px;
   }
 }
+.form .container--modal {
+  padding: 16px;
+}
 .form .container--modal p {
   margin-bottom: 0;
 }
