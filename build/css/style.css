@@ -2090,8 +2090,8 @@ header {
 }
 @media (min-width: 768px) {
   .services .services__list--page {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
     padding: 0 0 20px;
   }
 }
@@ -3005,7 +3005,6 @@ header {
 }
 @media (min-width: 1440px) {
   .form .form__item--checkbox .checkbox .checkbox__body {
-    white-space: nowrap;
     margin-top: 0;
   }
 }
