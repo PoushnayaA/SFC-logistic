@@ -1,9 +1,0 @@
-.container {
-  padding: 16px;
-  max-width: 1240px;
-  margin: 0 auto;
-
-  @include vp-1440 {
-    padding: 20px 0;
-  }
-}
