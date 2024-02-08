@@ -1,0 +1,46 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+// Swiper 8.4.7
+@import "vendor/swiper";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/hero";
+@import "blocks/navigation-language";
+@import "blocks/navigation";
+@import "blocks/services";
+@import "blocks/case";
+@import "blocks/swiper-services";
+@import "blocks/transportation";
+@import "blocks/swiper-news";
+@import "blocks/form";
+@import "blocks/faq";
+@import "blocks/accordion";
+@import "blocks/data-accordion";
+@import "blocks/footer";
+@import "blocks/services-page";
+@import "blocks/service-hero";
+@import "blocks/service";
+@import "blocks/advantages";
+@import "blocks/geography-items";
+@import "blocks/geography";
+@import "blocks/country";
+@import "blocks/description";
+@import "blocks/geography-hero";
+@import "blocks/about";
+@import "blocks/contact";
+@import "blocks/news";
+@import "blocks/error";

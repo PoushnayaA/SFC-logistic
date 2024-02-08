@@ -1,0 +1,133 @@
+.swiper-services {
+  margin-bottom: 65px;
+
+  @include vp-1440 {
+    margin-top: 75px;
+    margin-bottom: 95px;
+  }
+
+  @include vp-1440 {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-services__item {
+    position: relative;
+    width: 100%;
+    height: 538px;
+    // height: max-content;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(110.78deg, rgba(30, 43, 59, 0.5) 15.86%, rgba(30, 43, 59, 0.00312519) 73.29%, rgba(30, 43, 59, 0) 73.29%, rgba(30, 43, 59, 0) 73.29%);
+      z-index: 2;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-services__item {
+    position: relative;
+    z-index: 0;
+  }
+
+  .swiper-services__text {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 16px;
+    // transform: translate(0, -50%);
+    right: 16px;
+    z-index: 3;
+
+    // width: 100%;
+    max-width: 1240px;
+
+    @include vp-768 {
+      transform: translate(-50%, -50%);
+      left: 50%;
+      padding: 20px;
+    }
+
+    @include vp-1440 {
+      // bottom: 0;
+      top: 50%;
+      // top: auto;
+      transform: translate(0,-50%);
+      left: 20px;
+      padding: 0;
+    }
+
+    h3 {
+      font-family: $ff-syncopate;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 43px;
+      color: $color-twine;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $color-default-white;
+    }
+  }
+
+  .container {
+    padding: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  .transparent-button {
+    background-color: $color-twine;
+    color: $color-default-white;
+    margin-bottom: 20px;
+    width: 100%;
+
+    @include vp-768 {
+      width: 256px;
+    }
+
+    &:hover,
+&:focus,
+&:active {
+  background-color: #DFB17D;
+}
+  }
+
+  .swiper-pagination {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #dedede;
+    opacity: 100%;
+    width: 100%;
+    max-width: 60px;
+    height: 4px;
+    border-radius: 0;
+
+    &:hover,
+&:active {
+  background-color: #DFB17D;
+}
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $color-twine;
+  }
+}
